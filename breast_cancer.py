@@ -26,3 +26,13 @@ from sklearn.model_selection import cross_val_score
 accuracies = cross_val_score(estimator = classifier, X = X_train, y = y_train, cv = 10)
 print("Accuracy: {:.2f} %".format(accuracies.mean()*100))
 print("Standard Deviation: {:.2f} %".format(accuracies.std()*100))
+
+"""
+[[89  3]
+ [ 2 43]]
+ To evaluate a model there is 3 type I errors(meaning a person was predicted cancer,
+ but in reality he/she doesn't have. And also 2 type II errors(meaning a person was predicted 
+ not to have cancer, but in reality he does)), all other 132 observations were predicted correctly.
+Accuracy: 96.70 %
+Standard Deviation: 2.28 %
+"""
